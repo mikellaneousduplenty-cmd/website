@@ -785,4 +785,17 @@ footer { background: var(--charcoal); padding: 56px 24px; }
   // Form submit
   function submitForm() {
     const fn  = document.getElementById('fn').value.trim();
-    const em 
+    const em  = document.getElementById('em').value.trim();
+    const ty  = document.getElementById('ty').value;
+    const msg = document.getElementById('msg').value.trim();
+    if (!fn || !em || !ty || !msg) {
+      alert('Please complete all fields before submitting.');
+      return;
+    }
+    document.getElementById('cForm').style.display = 'none';
+    document.getElementById('fOk').style.display   = 'block';
+  }
+</script>
+
+</body>
+</html>
