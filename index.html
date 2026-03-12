@@ -166,8 +166,7 @@ nav.light .hamburger span { background: var(--charcoal); }
 .featured-grid { display: grid; grid-template-columns: 1fr 1.55fr; gap: 60px; align-items: start; margin-top: 44px; }
 .c-card { border: 1px solid var(--border); background: var(--cream); }
 .c-head { background: var(--charcoal); padding: 36px 28px; text-align: center; }
-.c-avatar { width: 76px; height: 76px; border-radius: 50%; background: var(--accent); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.5rem; color: var(--white); border: 3px solid rgba(255,255,255,0.1); }
-.c-head h3 { font-family: var(--serif); font-size: 1.55rem; font-weight: 400; color: var(--white); margin-bottom: 4px; }
+.c-avatar { width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 16px; display: block; object-fit: cover; border: 3px solid rgba(255,255,255,0.15); }.c-head h3 { font-family: var(--serif); font-size: 1.55rem; font-weight: 400; color: var(--white); margin-bottom: 4px; }
 .c-head p  { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(253,251,248,0.4); }
 .c-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-top: 1px solid var(--border); }
 .c-stat  { background: var(--cream); padding: 18px 14px; text-align: center; }
@@ -571,7 +570,7 @@ footer { background: var(--charcoal); padding: 56px 24px; }
 
       <div class="c-card fade">
         <div class="c-head">
-          <div class="c-avatar">LFB</div>
+          <img class="c-avatar" src="london-food-babes2.jpeg" alt="London Food Babes">
           <h3>London Food Babes</h3>
           <p>@londonfoodbabes · Est. 2014</p>
         </div>
